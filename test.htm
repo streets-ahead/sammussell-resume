@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	
+	<link rel="stylesheet" href="reset.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="960.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script src="jqPopover.js"></script>
+	
+	<style type="text/css" media="screen">
+		body {
+			background-color:#555;
+			color:#fff;
+		}
+	
+		.popover_content {
+			position:absolute;
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			border-radius: 10px;
+			
+			background-color:#ffffff;
+			
+			box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5);
+			
+			padding:5px;
+			z-index:100;
+			
+			color:#555;
+			
+			display:none;
+		}
+		
+		.popover_content > .triangle {
+			position:absolute;			
+			width:0px;
+			height:0px;
+		}
+		
+		.popover_content > .down_triangle {
+			border-top: 24px solid #ffffff;
+			border-left:24px solid transparent;
+			border-right:24px solid transparent;
+			border-bottom:18px solid transparent;
+
+			right:5px;			
+			bottom:-30px;
+		}
+		
+		.popover_content > .up_triangle {
+			border-top: 18px solid transparent;
+			border-left:24px solid transparent;
+			border-right:24px solid transparent;
+			border-bottom:24px solid #ffffff;
+			top:-30px;
+			right:5px;
+			z-index:-1;
+		}
+		
+		.popover_content > .close {
+			font-family:arial;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			border-radius: 50%;
+			background-color:#fff;
+			width:20px;
+			height:20px;
+			top:-5px;
+			left:-5px;
+			padding:1px;
+			text-align:center;
+			font-size:14px;
+			font-weight:bold;
+			position:absolute;
+			cursor:default;
+		}
+		
+		.field_container {
+			position:relative;
+		}
+		
+		.field_container  label{
+			position:absolute;
+			display:block; 
+			top:2px; 
+			left:5px; 
+			color:#aaa; 
+			z-index:100;
+		}
+		
+		.field_container input[type='text'], .field_container textarea {
+			display:block;
+		}
+		
+		
+	</style>
+	
+	<script src="jqLabelForm.js"></script>
+	<script type="text/javascript" charset="utf-8">
+		$(function() {
+			$('#test').jqPopover(250, 100);
+			$('form').jqLabelForm();
+		})
+	</script>
+	
+</head>
+<body>
+	<h1>BLAH BLAH BLHA</h1>
+	
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet nunc iaculis urna adipiscing tempor at quis magna. Praesent aliquet adipiscing posuere. Nam commodo elit quis nunc condimentum eget lacinia risus vestibulum. Praesent at libero ac neque tempus pulvinar eu at lectus. Nulla eget erat a libero rutrum dignissim facilisis vitae elit. Ut aliquam tortor ut odio sollicitudin aliquam. Praesent vestibulum adipiscing facilisis. In varius fermentum orci mattis posuere. Duis vel magna metus, eu ultrices neque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin scelerisque venenatis nulla malesuada eleifend. Sed ut lorem non est feugiat suscipit. Maecenas a magna et orci fringilla condimentum non eu eros. Vivamus ac magna nec augue luctus pretium. Sed nunc magna, ultricies et tincidunt at, semper eu ligula. Nullam quis mi vel lectus pharetra ornare quis non metus. Morbi scelerisque diam sit amet lorem vehicula egestas. Suspendisse potenti. Vivamus nec dui nibh. Fusce at neque et orci vulputate semper in sed tellus.
+	</p>
+	<p>
+		Aenean blandit, lacus nec pellentesque lobortis, nisi elit blandit libero, consectetur placerat lorem mauris quis mi. Nulla facilisi. Quisque a lobortis orci. Nunc leo diam, consectetur et auctor eu, aliquet mollis lacus. Curabitur mollis viverra arcu, ut imperdiet urna egestas eget. Aenean ac lorem ut odio cursus euismod. Integer quis mauris et risus sodales vulputate sed eu mi. Fusce tempus auctor ullamcorper. Vestibulum lorem leo, placerat non tempus quis, lacinia eget sem. In pellentesque nisl non diam tempor vel vulputate nunc sagittis. Nam faucibus ante sit amet mi placerat at ornare dui ultricies. Phasellus mattis massa vel tellus pellentesque eleifend. Nunc nec varius sem. Vestibulum dolor turpis, rutrum a auctor nec, iaculis id felis. Phasellus eu lacus quam, at rhoncus libero. Ut sodales ligula a nulla vehicula pretium. Morbi euismod, purus et ultrices tempor, diam nibh ornare mauris, vel auctor neque erat consequat velit. Curabitur porta, eros a cursus pulvinar, est nisi pulvinar elit, tristique molestie turpis ante id arcu. Quisque pharetra posuere neque, et cursus nulla laoreet eget.
+
+		
+	</p>
+	
+		<form action="/contact" method="post" accept-charset="utf-8">
+			<label for='name'>Name</label>
+			<input type='text' name='name' id='name'>
+			<label for='subject'>Subject</label><input type='text' name='subject' id='subject'>
+			<label for='email'>Email</label><input type='text' name='email' id='email'>
+			<label for='body'>Message</label>
+			<textarea name="body" id='body' rows="8" cols="40"></textarea>
+		
+			<p><input type="submit" value="Send"></p>
+		</form>
+	
+	<ul style='margin-left:500px;'>
+		<li><a id='test' href="#pop">test</a></li>
+	</ul>
+	
+	<div id='popover_test'>
+		<h2>blah blah</h2>
+		<p>blah blah</p>
+	</div>
+</body>
+</html>

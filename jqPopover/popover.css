@@ -1,0 +1,63 @@
+.popover_content {
+	position:absolute;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	
+	background-color:#ffffff;
+	
+	box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5);
+	
+	padding:20px;
+	z-index:100;
+	
+	color:#555;
+	
+	display:none;
+}
+
+.popover_content > .triangle {
+	position:absolute;			
+	width:0px;
+	height:0px;
+}
+
+.popover_content > .down_triangle {
+	border-top: 24px solid #ffffff;
+	border-left:24px solid transparent;
+	border-right:24px solid transparent;
+	border-bottom:18px solid transparent;
+
+	right:5px;			
+	bottom:-30px;
+}
+
+.popover_content > .up_triangle {
+	border-top: 18px solid transparent;
+	border-left:24px solid transparent;
+	border-right:24px solid transparent;
+	border-bottom:24px solid #ffffff;
+	top:-30px;
+	right:5px;
+	z-index:-1;
+}
+
+.popover_content > .close {
+	font-family:arial;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	background-color:#fff;
+	width:20px;
+	height:20px;
+	top:-5px;
+	left:-5px;
+	padding:1px;
+	text-align:center;
+	font-size:14px;
+	font-weight:bold;
+	position:absolute;
+	cursor:default;
+}

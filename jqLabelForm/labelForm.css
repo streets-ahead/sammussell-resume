@@ -1,0 +1,16 @@
+.field_container {
+	position:relative;
+}
+
+.field_container  label{
+	position:absolute;
+	display:block; 
+	top:2px; 
+	left:5px; 
+	color:#aaa; 
+	z-index:100;
+}
+
+.field_container input[type='text'], .field_container textarea {
+	display:block;
+}

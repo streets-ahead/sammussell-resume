@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang=en>
+<head>
+	<meta charset=utf-8>
+	<title>blah</title>
+	
+	<link rel="stylesheet" href="reset.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="960.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	
+	<style type="text/css" media="screen">
+		body {
+			background-color:#333631;
+		}
+		
+		#timelinewrapper {
+			background-color:#d0d0d0;
+		}
+
+	</style>
+	
+</head>
+<body>
+	<div id='timelinewrapper'>
+		<div id='timeline' class='container_12'>
+			<div class='line leftLine'></div>
+			<div class='line rightLine'></div>
+			
+			<div id='bs' class='event eduevent'>BS Computer Science</div>
+			<div id='grad' class='event eduevent'>GC</div>
+			<div id='webdev' class='event workevent'>Hartshorn</div>
+			<div id='crown' class='event eduevent'>Crown Partners</div>
+			<div id='streets' class='event workevent'>Streets Ahead</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript" charset="utf-8">
+		var tl = document.getElementById('timeline');
+		var start = 2001;
+		for(var i = 0; i < 6; i++) {
+			if(i < 5 && i > 0) {
+				var line = 	document.createElement('div');
+				line.className = 'line';
+				line.style.left = i*192 + 'px';
+				tl.appendChild(line);
+			}
+			
+			var bottomLine = document.createElement('div');
+			bottomLine.className = 'bottomLine';
+			bottomLine.style.left = i*192 + 'px';
+			tl.appendChild(bottomLine);
+			
+			var label = document.createElement('div');
+			label.innerText = start + "";
+			start += 2;
+			label.className = 'label';
+			label.style.left = ((i*192) - 25) + 'px';
+			tl.appendChild(label)
+		}
+
+	</script>
+	
+</body>
+</html>
