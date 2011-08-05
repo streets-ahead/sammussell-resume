@@ -1,0 +1,209 @@
+body {
+	font-family: proxima-nova, Helvetica, Verdana;
+	font-size:1em;
+	color:#333631;
+}
+
+#headerbar {
+	height:30px;
+	border-bottom:1px solid #fff;
+}
+
+#introbar {
+	padding:5px 0px 20px;
+}
+
+#introbar p {
+	margin-top:0px;
+}
+
+
+#intro h1 {
+	font-weight:100;
+	font-size:3.5em;
+	text-align:right;
+	color:#333631;
+}
+
+#intro .subhead {
+	text-align:right;
+}
+
+#intro .subhead a {
+	color:#333631;
+	text-decoration:none;
+}
+
+h2 {
+	text-align:right;
+	font-size:2.7em;
+	font-weight:300;
+}
+
+h3 {
+	font-weight:500;
+	font-size:1.6em;
+	padding-top:20px;
+}
+
+h3:first-child {
+	padding-top:0px;
+}
+
+h4 {
+	font-weight:500;
+	font-style:italic;
+}
+
+ul {
+	padding-left:20px;
+}
+
+
+ul li {
+	margin-top:10px;
+}
+
+p {
+	margin-top:10px;
+}
+
+a {
+	color:#333631;
+}
+
+a:active {
+	text-decoration:none;
+}
+
+a:hover, a:visited {
+	color:#333631;
+}
+
+
+
+.field_container {
+	margin-top:10px;
+}
+
+label {
+	padding:8px;
+	font-size:1em;
+}
+
+input[type='text'], textarea{
+	padding:10px;
+	width:280px;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	font-size:.9em;
+}
+
+.darkbar {
+	color:#333631;
+}
+
+.darkbar h2 {
+	font-weight:100;
+}
+
+.darkbar h3 {
+	font-weight:300;
+}
+
+.darkbar h4 {
+	font-weight:300;
+}
+
+section, .footer-block{
+	padding:40px 0px;
+}
+
+#footerbar {
+	color:#333631;
+	height:20px;
+	padding:5px 0px;
+	font-size:.8em;
+	font-weight:100;
+	border-top:1px solid #fff;
+}
+
+.align_right {
+	text-align:right;
+}
+
+#skills {
+	position:relative;
+}
+
+#skills .grid_3, #personal .grid_3 {
+	width:190px;
+}
+
+#skills ul {
+	list-style:none;
+	padding-left:0px;
+	float:left;
+}
+
+#skills ul li {
+	float:left;
+	margin:2px 10px 2px 2px;
+	font-size:.9em;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding:3px;
+}
+
+#education {
+	padding-top:50px;
+}
+
+#content-footer {
+	display:none;
+}
+
+#content-footer h2 {
+	text-align:left;
+	font-size:2em;
+}
+
+#footer a {
+	color:#333631;
+}
+
+
+#personalbar {
+
+}
+
+#popover_infolink {
+	display:none;
+}
+
+/*-------- TIMELINE ----------*/
+
+#timelinebar {
+	display:none;
+}
+
+/*-----------  Key  --------------*/
+#key {
+	display:none;
+}
+
+#icons {
+	display:none;
+}
+
+#alert {
+	display:none;
+}
+
+.loader {
+	display:none;
+}
