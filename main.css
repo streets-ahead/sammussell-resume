@@ -107,6 +107,7 @@ input[type='text'], textarea{
 .darkbar {
 	background-color:#333631;
 	color:#fff;
+	width:100%;
 }
 
 .darkbar h2 {
@@ -127,6 +128,7 @@ section, .footer-block{
 
 #footerbar {
 	background-color:#1c1c1c;
+	width:100%;
 	color:#fff;
 	height:20px;
 	padding:5px 0px;
@@ -213,6 +215,7 @@ section, .footer-block{
 
 #personalbar {
 	background-color:#cde0e7;
+	width:100%;
 }
 
 
@@ -482,4 +485,18 @@ section, .footer-block{
 	width:100%;
 	text-align:center;
 	margin-top:40px;
+}
+
+@media only screen and (device-width: 768px) {
+	#key {
+		display:none;
+	}
+	
+	#timeline .label {
+		display:none;
+	}
+	
+	#timeline .bottomLine {
+		display:none;
+	}
 }
